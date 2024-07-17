@@ -18,11 +18,11 @@ A NoSQL Injection Lab developed with NodeJS and Express JS to understand and pra
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your_username/nosql-injection-lab.git
+    git clone https://github.com/EdsonSaldivar/No-Market-Injections.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd nosql-injection-lab
+    cd No-Market-Injections.git
     ```
 3. Install the dependencies:
     ```bash
