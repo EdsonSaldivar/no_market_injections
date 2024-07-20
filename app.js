@@ -1,17 +1,30 @@
 const express = require('express');
+const jwt = require('jsonwebtoken');
 const { connectToDatabase } = require('./utils/db');
-const productRouter = require('./router/product');
+//Rutas sin iniciar sesión:
+const startRouter = require('./router/start');
 const shopRouter = require('./router/shop');
 const signRouter = require('./router/sign');
 const loginRouter = require('./router/login');
+
+//Rutas con sesión iniciada:
+const startlogedRouter = require('./router/loged/start');
+const shoplogedRouter = require('./router/loged/shop');
+const productRouter = require('./router/loged/product');
 const app = express();
 
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(signRouter);
 app.use(loginRouter);
-app.use(productRouter);
 app.use(shopRouter);
+
+app.use(productRouter);
+app.use(startlogedRouter);
+app.use(shoplogedRouter);
+
+app.use(startRouter);
 
 connectToDatabase().then(() => {
     app.listen(3000, () => {
@@ -20,23 +33,3 @@ connectToDatabase().then(() => {
 }).catch(err => {
     console.error('Failed to connect to database', err);
 });
-
-
-
-// const express = require('express');
-// require('./utils/db');
-// const productRouter = require('./router/product');
-// const shopRouter = require('./router/shop');
-// const signRouter = require('./router/sign');
-// const loginRouter = require('./router/login');
-// const app = express();
-
-// app.use(express.urlencoded({extended:true}))
-// app.use(express.json()); // Para procesar datos JSON
-
-// app.use(loginRouter)
-// app.use(signRouter)
-// app.use(productRouter)
-// app.use(shopRouter)
-
-// app.listen(3000);
