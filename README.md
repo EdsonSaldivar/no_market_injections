@@ -22,7 +22,7 @@ A NoSQL Injection Lab developed with NodeJS and Express JS to understand and pra
     ```
 2. Navigate to the project directory:
     ```bash
-    cd No-Market-Injections.git
+    cd No-Market-Injections
     ```
 3. Install the dependencies:
     ```bash
