@@ -8,11 +8,15 @@ A NoSQL Injection Lab developed with NodeJS and Express JS to understand and pra
 - **ExpressJS:** 4.19.2
 - **MongoDB:** 6.8
 - **Nodemon:** 3.1.4
+- **jsonwebtoken:** 9.0.2
 
 ## Requirements
 
 - NodeJS 20.0 or higher
 - MongoDB 6.8
+- Jsonwebtoken 9.0 or higher
+- Nodemon 3.0 or higher
+- ExpressJS 4.0 or higher
 
 ## Installation and Execution
 
