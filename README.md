@@ -39,7 +39,7 @@ A NoSQL Injection Lab developed with NodeJS and Express JS to understand and pra
 
 ## Usage
 
-Once the server is running, access the lab through your browser at `http://localhost:3000`. Explore different exercises and examples of NoSQL injections to understand how they work and how to protect your applications from these vulnerabilities.
+Once the server is running, access the lab through your browser at `http://localhost:3000`. Explore the exercise of NoSQL injections to understand how they work and how to protect your applications from these vulnerabilities.
 
 ## Creator
 
