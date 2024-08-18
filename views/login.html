@@ -91,7 +91,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         color: #eee;
         animation: fadeIn 2s ease-out;
-        max-width: 100%; /* Asegura que el formulario no se salga del contenedor */
+        max-width: 100%;
     }
 
     .register-form label {
@@ -109,7 +109,7 @@
         border-radius: 4px;
         background-color: #555;
         color: #fff;
-        box-sizing: border-box; /* Asegura que los paddings no afecten al ancho total */
+        box-sizing: border-box; 
     }
 
     .register-form button {
@@ -127,7 +127,7 @@
         background-color: #45a049;
     }
 
-    /* CSS Shapes for Background */
+    
     .shape {
         position: absolute;
         background: rgba(255, 255, 255, 0.2);
@@ -353,18 +353,6 @@
                  if (result.token) {
                      localStorage.setItem('token', result.token);
                      window.location.href = '/loged?token='+result.token;
-                     // Redirigir usando fetch para incluir el token en el encabezado
-                    //  const logedResponse = await fetch('/loged', {
-                    //      headers: {
-                    //          'Authorization': `Bearer ${result.token}`
-                    //      }
-                    //  });
-                    //  if (logedResponse.ok) {
-                    //      const logedResult = await logedResponse.json();
-                    //      alert(logedResult.text);
-                    //  } else {
-                    //      alert('Error en la verificación del token.');
-                    //  }
                  } else {
                      alert('Error en el inicio de sesión: Usuario incorrecto');
                 }
