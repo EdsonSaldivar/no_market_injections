@@ -18,7 +18,8 @@ router.post('/register', async (req, res, next) => {
 
         if (existingUser) {
             // Si el usuario existe, enviar un mensaje de error o redirigir con un mensaje
-            return res.status(400).send('El nombre de usuario ya está en uso.');
+            //return res.status(400).send('El nombre de usuario ya está en uso.');
+            return res.sendFile(path.join(__dirname,'../error','usuario_existente.html'));
         }
 
         // Si el usuario no existe, insertar el nuevo usuario
