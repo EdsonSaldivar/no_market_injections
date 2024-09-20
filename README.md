@@ -1,4 +1,4 @@
-# No-Market-Injections (NoSQL Injection Lab)
+# No_Market_Injections (NoSQL Injection Lab)
 
 A NoSQL Injection Lab developed with NodeJS and Express JS to understand and practice NoSQL injection vulnerabilities.
 
@@ -22,11 +22,11 @@ A NoSQL Injection Lab developed with NodeJS and Express JS to understand and pra
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/EdsonSaldivar/No-Market-Injections.git
+    git clone https://github.com/EdsonSaldivar/No_Market_Injections.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd No-Market-Injections
+    cd No_Market_Injections
     ```
 3. Install the dependencies:
     ```bash
