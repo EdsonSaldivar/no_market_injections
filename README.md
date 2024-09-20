@@ -9,6 +9,7 @@ A NoSQL Injection Lab developed with NodeJS and Express JS to understand and pra
 - **MongoDB:** 6.8
 - **Nodemon:** 3.1.4
 - **jsonwebtoken:** 9.0.2
+- **docker**
 
 ## Requirements
 
@@ -17,6 +18,7 @@ A NoSQL Injection Lab developed with NodeJS and Express JS to understand and pra
 - Jsonwebtoken 9.0 or higher
 - Nodemon 3.0 or higher
 - ExpressJS 4.0 or higher
+- Docker
 
 ## Installation and Execution
 
@@ -28,15 +30,18 @@ A NoSQL Injection Lab developed with NodeJS and Express JS to understand and pra
     ```bash
     cd no_market_injections
     ```
-3. Install the dependencies:
+3. Edit utils/db.js with your username and password:
     ```bash
-    npm install
+    nano utils/db.js
     ```
-4. Start the server in development mode:
+4. Enable execution permissions to build_docker.sh:
     ```bash
-    npm run dev
+    chmod 755 build_docker.sh
     ```
-
+5. Run build_docker.sh:
+   ```bash
+    bash build_docker.sh
+    ```
 ## Usage
 
 Once the server is running, access the lab through your browser at `http://localhost:3000`. Explore the exercise of NoSQL injections to understand how they work and how to protect your applications from these vulnerabilities.
