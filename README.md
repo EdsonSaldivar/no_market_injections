@@ -30,7 +30,7 @@ A NoSQL Injection Lab developed with NodeJS and Express JS to understand and pra
     ```bash
     cd no_market_injections
     ```
-3. Edit utils/db.js with your mongodb uri adn your database name:
+3. Edit utils/db.js with your mongodb uri and your database name:
     ```bash
     nano utils/db.js
     ```
