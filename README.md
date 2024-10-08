@@ -20,6 +20,8 @@ A NoSQL Injection Lab developed with NodeJS and Express JS to understand and pra
 - ExpressJS 4.0 or higher
 - Docker
 
+Change respective lines in utils/db.js for connect with your database
+
 ## Installation and Execution
 
 1. Clone the repository:
