@@ -1,7 +1,8 @@
 #!/bin/bash
 
-sudo docker rm -f no_market_injections
+# Detener y eliminar los contenedores si ya existen
+sudo docker-compose down
 
-sudo docker build --tag=no_market_injections . && \
+# Construir y levantar los servicios (MongoDB y la app) definidos en docker-compose.yml
+sudo docker-compose up --build
 
-sudo docker run --name=no_market_injections --rm -p 3000:3000 -it no_market_injections
