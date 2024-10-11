@@ -1,6 +1,6 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
-// Replace this line with your "uri" from https://www.mongodb.com/es
-const uri = "mongodb+srv://yourusername:yourpassword@cluster0.xw1ph7i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+// MongoDB in Docker-Compose.yml
+const uri = "mongodb://mongo:27017/test";
 
 const client = new MongoClient(uri, {
     serverApi: {
