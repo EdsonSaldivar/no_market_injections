@@ -1,6 +1,8 @@
-db = db.getSiblingDB('test');  // Seleccionar la base de datos 'test'
+//DON´T READ THIS UNTIL YOU FINISH THE LAB
 
-// Insertar documentos en la colección 'users'
+db = db.getSiblingDB('test');  // Using DataBase 'test'
+
+// Insert documents in collection 'users'
 db.users.insertMany([
     {
         _id: ObjectId("66c14efb7d84cc04bb220ad4"),
@@ -16,7 +18,7 @@ db.users.insertMany([
     }
 ]);
 
-// Insertar documentos en la colección 'products'
+// Insert documents in collection 'products'
 db.products.insertMany([
     {
         _id: ObjectId("669711c356cbe16b65d45af7"),
